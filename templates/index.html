@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Generator</title>
+</head>
+<body>
+    <h1>Product Description Generator</h1>
+    <form method="post">
+        <label for="features">Enter product features:</label>
+        <textarea id="features" name="features" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Generate Description</button>
+    </form>
+
+    {% if description %}
+        <h2>Generated Description:</h2>
+        <p>{{ description }}</p>
+    {% endif %}
+</body>
+</html>
